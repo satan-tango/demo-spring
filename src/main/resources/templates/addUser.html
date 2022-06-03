@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="main-area">
+    <div class="container">
+        <div class="main-area__inner">
+            <div class="main-area__left"></div>
+            <div class="main-area__right">
+                <form action="/user" method="post" class="user-form">
+                    <div class="user-form__fields">
+                        <div class="user-form__filed">
+                            <label for="POST-name" class="user-form__label" >Name:</label>
+                            <input id="POST-name" type="text" name="name">
+                        </div>
+                        <div class="user-form__filed">
+                            <label for="POST-email" class="user-form__label">email:</label>
+                            <input id="POST-email" type="text" name="email">
+                        </div>
+                        <div class="user-form__filed">
+                            <label for="POST-tel" class="user-form__label">tel:</label>
+                            <input id="POST-tel" type="text" name="tel">
+                        </div>
+                        <div class="user-form__button">
+                            <input type="submit" value="Save">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
